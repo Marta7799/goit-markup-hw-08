@@ -1,0 +1,92 @@
+.header {
+  border-bottom: 1px solid $line-color;
+  align-items: center;
+  &__nav {
+    display: flex;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+    margin-right: 93px;
+    padding-bottom: 25px;
+    padding-top: 24px;
+  }
+  &__logo--accent {
+    color: $accent-color;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+  &__list {
+    display: flex;
+  }
+  &__link {
+    font-weight: 500;
+    line-height: 1, 14;
+    letter-spacing: 0.02em;
+    padding: 32px 0;
+    transition: $trans-color;
+  }
+  &__item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 46px;
+  }
+  &__link--current {
+    color: $accent-color;
+    position: relative;
+  }
+  &__link--current::after {
+    content: "";
+    width: 53px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    background: $accent-color;
+    left: 0;
+  }
+  &__link--current:hover::after {
+    width: 100%;
+  }
+}
+.contact {
+  display: flex;
+  margin-left: auto;
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__item {
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $other-text-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: $trans-color, $trans-fill;
+  }
+  &__item:focus,
+  &__item:hover {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+.envelope-icons {
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: currentColor;
+}
+.phone-icons {
+  margin-right: 10px;
+  vertical-align: middle;
+  fill: currentColor;
+}

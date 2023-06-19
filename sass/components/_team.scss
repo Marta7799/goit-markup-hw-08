@@ -1,0 +1,68 @@
+.team {
+  background-color: $background-team-color;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  &__item {
+    background: $background-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: $fontsize-title;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+}
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+
+  &__name {
+    font-weight: 500;
+    font-size: $fontsize-bigger;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  &__job {
+    @extend .team-info_name !optional;
+    color: $other-text-color;
+    margin-left: auto;
+    margin-bottom: 16px;
+  }
+}
+.team-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $icon-color;
+    border-radius: 50%;
+    transition: $trans-color, $trans-backgroundcolor;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $secondary-text-color;
+    background-color: $accent-color;
+  }
+}
+.socialmedia {
+  fill: currentColor;
+}
