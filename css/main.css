@@ -51,7 +51,8 @@ svg {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -793,7 +794,7 @@ svg {
 }
 .join-field__title {
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
