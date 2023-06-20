@@ -56,6 +56,16 @@ svg {
   margin: 0 auto;
   padding: 0 15px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 
 .header {
   border-bottom: 1px solid #ececec;
@@ -84,8 +94,27 @@ svg {
 .header__link:hover, .header__link:focus {
   color: #2196f3;
 }
-.header__list {
+.header__hamburger {
+  position: absolute;
+  right: 23px;
+  top: 22px;
+  border: none;
+  background-color: transparent;
   display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__hamburger {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__hamburger {
+    display: none;
+  }
+}
+.header__list {
+  display: none;
 }
 .header__link {
   font-weight: 500;
@@ -116,6 +145,9 @@ svg {
 }
 .header__link--current:hover::after {
   width: 100%;
+}
+.header__contacts {
+  display: none;
 }
 
 .contact {
@@ -372,6 +404,10 @@ svg {
   text-decoration: underline;
 }
 
+.clients {
+  display: none;
+}
+
 .clients__title {
   font-weight: 700;
   font-size: 36px;
@@ -408,6 +444,7 @@ svg {
 }
 
 .doing {
+  display: none;
   padding-top: 0;
 }
 .doing__title {
@@ -448,6 +485,7 @@ svg {
 }
 
 .effects {
+  display: none;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/effects-background.jpg);
   background-position: center;
   background-size: contain;
@@ -491,6 +529,7 @@ svg {
 }
 
 .strengths {
+  display: none;
   padding-bottom: 0;
 }
 .strengths__list {
@@ -531,6 +570,7 @@ svg {
 }
 
 .team {
+  display: none;
   background-color: #f5f4fa;
   width: 100%;
   margin: 0 auto;
@@ -595,6 +635,10 @@ svg {
 
 .socialmedia {
   fill: currentColor;
+}
+
+.portfolio {
+  display: none;
 }
 
 .portfolio__list {
@@ -693,6 +737,7 @@ svg {
 }
 
 .footer {
+  display: none;
   background-color: #2f303a;
   font-style: normal;
   padding: 60px 0;
@@ -742,6 +787,7 @@ svg {
 }
 
 .newsletter {
+  display: none;
   margin-left: 78px;
 }
 .newsletter__label {
@@ -790,6 +836,7 @@ svg {
 }
 
 .join-field {
+  display: none;
   margin-left: 70px;
 }
 .join-field__title {
@@ -821,4 +868,31 @@ svg {
 .join-list__link:focus, .join-list__link:hover {
   fill: #ffffff;
   background-color: #2196f3;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container {
+  background-color: #ffffff;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  padding: 48px 40px;
+}
+.menu-container__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: none;
+}
+
+.mobile-contact {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
