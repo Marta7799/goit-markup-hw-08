@@ -9,6 +9,7 @@
   flex-direction: column;
   justify-content: space-between;
   transform: translateX(100%);
+  transition: $trans-transform;
   padding: 48px 40px;
 
   &__close-btn {
@@ -19,7 +20,78 @@
     border: none;
   }
 }
+@include tablet {
+  display: none;
+}
+@include desktop {
+  display: none;
+}
+.mobile-menu {
+  font-size: 40px;
+  line-height: 1.17;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &__link {
+    color: #212121;
+    transition: $trans-transform;
+  }
+}
 .mobile-contact {
   display: flex;
   flex-direction: column;
+  margin-top: auto;
+
+  &__phone {
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    display: block;
+    color: $accent-color;
+    margin-bottom: 32px;
+    transition: $trans-transform;
+  }
+  &__email {
+    @extend .mobile-contact__phone;
+    font-size: 24px;
+    color: $other-text-color;
+    margin-bottom: 64px;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+}
+.mobile-socials {
+  display: flex;
+  gap: 10px;
+
+  &__item {
+    display: flex;
+    letter-spacing: 0.02em;
+    border-right: 1px solid $accent-color;
+  }
+  &__link {
+    color: $accent-color;
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 0;
+    transition: $trans-transform;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
 }
