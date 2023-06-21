@@ -1,5 +1,4 @@
 .team {
-  display: none;
   background-color: $background-team-color;
   width: 100%;
   margin: 0 auto;
@@ -20,7 +19,19 @@
   }
   &__list {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 30px;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include desktop {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 }
 .team-info {

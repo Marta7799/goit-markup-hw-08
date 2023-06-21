@@ -14,8 +14,8 @@
 
   &__close-btn {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 21px;
+    right: 25.33px;
     background-color: transparent;
     border: none;
     &:hover,
@@ -23,12 +23,12 @@
       color: $accent-color;
     }
   }
-}
-@include tablet {
-  display: none;
-}
-@include desktop {
-  display: none;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
 }
 .mobile-menu {
   &__link {
@@ -37,12 +37,15 @@
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #212121;
+    display: block;
     transition: $trans-transform;
-    &:not(:last-child) {
-      margin-bottom: 32px;
-    }
     &--accent {
       color: $accent-color;
+    }
+  }
+  &__list {
+    &:not(:last-child) {
+      margin-bottom: 36px;
     }
   }
 }
@@ -69,8 +72,10 @@
   display: flex;
   gap: 10px;
 
-  &__item {
-    border-right: 1px solid $accent-color;
+  &__item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 10px;
+    padding-right: 10px;
   }
   &__link {
     color: $accent-color;
