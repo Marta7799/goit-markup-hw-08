@@ -1,11 +1,19 @@
 .strengths {
-  display: none;
-  padding-bottom: 0;
-
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
     margin-bottom: 94px;
+    align-items: center;
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include desktop {
+      flex-direction: row;
+      justify-content: center;
+    }
   }
   &__item {
     width: 270px;

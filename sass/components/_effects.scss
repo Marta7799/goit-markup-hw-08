@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   padding: 118px 0;
   height: 600px;
-  max-width: 1600px;
+  max-width: 480px;
   margin: 0 auto;
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -25,6 +25,7 @@
 
   @include desktop {
     padding: 200px 0;
+    max-width: 1600px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -44,6 +45,7 @@
     }
   }
   @include tablet {
+    max-width: 768px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -75,7 +77,6 @@
   }
   @include desktop {
     font-size: 44px;
-    max-width: 696px;
   }
   &__button:focus,
   &__button:hover {

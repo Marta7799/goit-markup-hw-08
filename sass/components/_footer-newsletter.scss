@@ -1,9 +1,19 @@
 .newsletter {
-  display: none;
-  margin-left: 78px;
-
+  display: flex;
+  margin-top: 60px;
+  flex-direction: column;
+  @include desktop {
+    margin-left: 70px;
+    margin-top: 30px;
+  }
   &__label {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desktop {
+      flex-direction: row;
+      align-items: baseline;
+    }
   }
   &__input {
     display: block;
@@ -21,6 +31,11 @@
     letter-spacing: 0.03em;
     color: $footer-text-color;
     transition: $trans-border;
+    &::placeholder {
+      font-size: $fontsize-bigger;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+    }
   }
   &__button {
     position: relative;
@@ -29,16 +44,19 @@
     font-weight: 700;
     font-size: $fontsize-bigger;
     line-height: 1.9;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     letter-spacing: 0.06em;
     color: $secondary-text-color;
     background: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-left: 12px;
-    padding-left: 42px;
+    margin-top: 20px;
+    padding-left: 28px;
+
+    @include desktop {
+      margin-left: 12px;
+    }
   }
   &icon {
     margin-left: 24px;

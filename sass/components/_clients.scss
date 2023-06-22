@@ -1,5 +1,5 @@
 .clients {
-  display: none;
+  text-align: center;
 }
 .clients__title {
   font-weight: 700;
@@ -11,7 +11,13 @@
 }
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
+  @include desktop {
+    flex-wrap: nowrap;
+  }
 }
 .clients__icon {
   fill: currentColor;

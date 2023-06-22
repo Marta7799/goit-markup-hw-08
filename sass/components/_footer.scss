@@ -1,12 +1,28 @@
 .footer {
-  display: none;
   background-color: $background-footer-color;
-  font-style: normal;
   padding: 60px 0;
 
   &__wrapper {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    text-align: center;
+    @include tablet {
+      flex-direction: row;
+    }
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+  &__left {
+    margin-bottom: 60px;
+    @include tablet {
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+    @include desktop {
+      margin-right: 70px;
+      margin-bottom: 0;
+    }
   }
   &__logo {
     font-family: "Raleway";
@@ -27,10 +43,12 @@
   margin-top: 20px;
   &__link {
     font-weight: 400;
+    font-size: $fontsize-normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $secondary-text-color;
     transition: $trans-color;
+    margin-top: 9px;
   }
   &__link:hover,
   &__link:focus {

@@ -1,6 +1,5 @@
 .join-field {
-  display: none;
-  margin-left: 70px;
+  margin-top: 60px;
 
   &__title {
     font-weight: 700;
@@ -9,12 +8,14 @@
     text-transform: uppercase;
     color: $secondary-text-color;
     margin-bottom: 20px;
+    margin-top: 12px;
     align-items: baseline;
   }
 }
 .join-list {
   display: flex;
   gap: 10px;
+  justify-content: center;
   &__link {
     width: 44px;
     height: 44px;
