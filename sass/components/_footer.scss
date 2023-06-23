@@ -8,6 +8,7 @@
     text-align: center;
     @include tablet {
       flex-direction: row;
+      flex-wrap: wrap;
     }
     @include desktop {
       flex-direction: row;
