@@ -2,6 +2,13 @@
   margin-top: 60px;
   flex-direction: column;
 
+  @include tablet {
+    margin-top: 65px;
+  }
+  @include desktop {
+    margin-top: 71px;
+  }
+
   &__title {
     font-weight: 700;
     line-height: 1.14;
@@ -10,7 +17,6 @@
     color: $secondary-text-color;
     margin-bottom: 20px;
     margin-top: 12px;
-    align-items: baseline;
   }
 }
 .join-list {
