@@ -1,7 +1,7 @@
 .header {
   border-bottom: 1px solid $line-color;
   height: 60px;
-  padding: 10px 0;
+  padding: 26px 0;
   @include tablet {
     padding: 21px 0;
     height: 80px;
@@ -42,13 +42,13 @@
     display: flex;
     justify-content: space-between;
     margin-left: auto;
-  }
 
-  @include tablet {
-    display: none;
-  }
-  @include desktop {
-    display: none;
+    @include tablet {
+      display: none;
+    }
+    @include desktop {
+      display: none;
+    }
   }
   &__hamburger-icon {
     color: $main-text-color;

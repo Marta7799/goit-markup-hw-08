@@ -76,7 +76,7 @@ svg {
 .header {
   border-bottom: 1px solid #ececec;
   height: 60px;
-  padding: 10px 0;
+  padding: 26px 0;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
@@ -125,12 +125,12 @@ svg {
   margin-left: auto;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header {
+  .header__hamburger {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header {
+  .header__hamburger {
     display: none;
   }
 }
