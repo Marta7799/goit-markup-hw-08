@@ -12,7 +12,7 @@
     @include tablet {
       display: flex;
       align-items: center;
-      padding: 10px 0;
+      padding: 21px 0;
       height: 80px;
     }
     @include desktop {
@@ -97,6 +97,8 @@
   display: none;
   @include tablet {
     display: flex;
+    margin-left: 101px;
+    display: flex;
     flex-direction: column;
     gap: 10px;
   }
@@ -104,6 +106,7 @@
     display: flex;
     gap: 30px;
     flex-direction: row;
+    margin-left: 345px;
   }
 
   &__item {

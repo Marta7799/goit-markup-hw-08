@@ -94,7 +94,7 @@ svg {
   .header__wrapper {
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    padding: 21px 0;
     height: 80px;
   }
 }
@@ -186,6 +186,8 @@ svg {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact {
     display: flex;
+    margin-left: 101px;
+    display: flex;
     flex-direction: column;
     gap: 10px;
   }
@@ -195,6 +197,7 @@ svg {
     display: flex;
     gap: 30px;
     flex-direction: row;
+    margin-left: 345px;
   }
 }
 .contact__item {
