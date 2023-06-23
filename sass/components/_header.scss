@@ -36,19 +36,6 @@
   &__link:focus {
     color: $accent-color;
   }
-  &__hamburger {
-    border: none;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-
-    @include tablet {
-      display: none;
-    }
-    @include desktop {
-      display: none;
-    }
-  }
   &__hamburger-icon {
     color: $main-text-color;
     transition: $trans-color;

@@ -119,30 +119,16 @@ svg {
 .header__logo--accent {
   color: #2196f3;
 }
-.header__link:hover, .header__link:focus {
+.header__link:hover,
+.header__link:focus {
   color: #2196f3;
-}
-.header__hamburger {
-  border: none;
-  background-color: transparent;
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header__hamburger {
-    display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__hamburger {
-    display: none;
-  }
 }
 .header__hamburger-icon {
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__hamburger-icon:hover, .header__hamburger-icon:focus {
+.header__hamburger-icon:hover,
+.header__hamburger-icon:focus {
   color: #2196f3;
 }
 .header__list {
@@ -216,9 +202,11 @@ svg {
   color: #757575;
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact__item:focus, .contact__item:hover {
+.contact__item:focus,
+.contact__item:hover {
   color: #2196f3;
   fill: #2196f3;
 }
@@ -383,7 +371,8 @@ svg {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.feedback__text:focus-within, .feedback__text:hover {
+.feedback__text:focus-within,
+.feedback__text:hover {
   border: 1px solid #2196f3;
 }
 
@@ -549,7 +538,11 @@ svg {
 }
 
 .effects {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/effects-background-mobile.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/effects-background-mobile.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -558,32 +551,64 @@ svg {
   max-width: 480px;
   margin: 0 auto;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .effects {
-    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%), url(../images/effects-background-mobile.jpg);
+    background-image: linear-gradient(
+        90deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 0%
+      ),
+      url(../images/effects-background-mobile.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .effects {
     padding: 200px 0;
     max-width: 1600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/effects-background-desktop.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/effects-background-desktop.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .effects {
-    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%), url(../images/effects-background-desktop.jpg);
+    background-image: linear-gradient(
+        90deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 0%
+      ),
+      url(../images/effects-background-desktop.jpg);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .effects {
     max-width: 768px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/effects-background-tablet.jpg);
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/effects-background-tablet.jpg);
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
   .effects {
-    background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%), url(../images/effects-background-tablet.jpg);
+    background-image: linear-gradient(
+        90deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 0%
+      ),
+      url(../images/effects-background-tablet.jpg);
   }
 }
 .effects__title {
@@ -602,7 +627,8 @@ svg {
     font-size: 44px;
   }
 }
-.effects__button:focus, .effects__button:hover {
+.effects__button:focus,
+.effects__button:hover {
   color: none;
 }
 .effects__button {
@@ -684,7 +710,8 @@ svg {
 }
 .team__item {
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 24px;
   width: 100%;
@@ -751,9 +778,11 @@ svg {
   justify-content: center;
   color: #afb1b8;
   border-radius: 50%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-icons__link:hover, .team-icons__link:focus {
+.team-icons__link:hover,
+.team-icons__link:focus {
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -784,14 +813,17 @@ svg {
   background: #f5f4fa;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__button:hover,
 .portfolio__button:focus {
   background-color: #2196f3;
   color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-img-list {
@@ -803,7 +835,8 @@ svg {
   flex-basis: calc((100% - 60px) / 3);
 }
 .portfolio-img-list__link:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-img-list__link {
   display: block;
@@ -922,19 +955,23 @@ svg {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 9px;
 }
-.address__link:hover, .address__link:focus {
+.address__link:hover,
+.address__link:focus {
   color: #2196f3;
 }
 .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address__mail:hover, .address__mail:focus {
+.address__mail:hover,
+.address__mail:focus {
   color: #2196f3;
 }
-.address__tel:hover, .address__tel:focus {
+.address__tel:hover,
+.address__tel:focus {
   color: #2196f3;
 }
-.address__mail, .address__tel {
+.address__mail,
+.address__tel {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1005,7 +1042,8 @@ svg {
 .newslettericon {
   margin-left: 24px;
 }
-.newsletter__input:hover, .newsletter__input:focus {
+.newsletter__input:hover,
+.newsletter__input:focus {
   border: 1px solid #2196f3;
 }
 
@@ -1039,9 +1077,11 @@ svg {
   border: 1px solid transparent;
   background-color: #2f303a;
   border-radius: 50%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.join-list__link:focus, .join-list__link:hover {
+.join-list__link:focus,
+.join-list__link:hover {
   fill: #ffffff;
   background-color: #2196f3;
 }
@@ -1061,16 +1101,6 @@ svg {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 48px 40px;
 }
-.menu-container__close-btn {
-  position: absolute;
-  top: 21px;
-  right: 25.33px;
-  background-color: transparent;
-  border: none;
-}
-.menu-container__close-btn:hover, .menu-container__close-btn:focus {
-  color: #2196f3;
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .menu-container {
     display: none;
@@ -1078,6 +1108,31 @@ svg {
 }
 @media screen and (min-width: 1200px) {
   .menu-container {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-toggle {
     display: none;
   }
 }
@@ -1101,7 +1156,8 @@ svg {
 .mobile-contact {
   margin-top: auto;
 }
-.mobile-contact__phone, .mobile-contact__email {
+.mobile-contact__phone,
+.mobile-contact__email {
   font-size: 34px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -1134,4 +1190,4 @@ svg {
   letter-spacing: 0.02em;
   padding: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

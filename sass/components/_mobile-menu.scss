@@ -12,21 +12,30 @@
   transition: $trans-transform;
   padding: 48px 40px;
 
-  &__close-btn {
-    position: absolute;
-    top: 21px;
-    right: 25.33px;
-    background-color: transparent;
-    border: none;
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
-  }
   @include tablet {
     display: none;
   }
   @include desktop {
+    display: none;
+  }
+}
+.menu-toggle {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  @include desktop {
+    display: none;
+  }
+  @include tablet {
     display: none;
   }
 }
