@@ -1,5 +1,8 @@
 .doing {
   display: none;
+  @include desktop {
+    display: flex;
+  }
   &__title {
     font-weight: 700;
     font-size: $fontsize-title;

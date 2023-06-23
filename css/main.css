@@ -75,16 +75,19 @@ svg {
 
 .header {
   border-bottom: 1px solid #ececec;
+  height: 60px;
   padding: 10px 0;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .header {
     padding: 21px 0;
+    height: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header {
     padding: 24px 0 25px;
+    height: 80px;
   }
 }
 .header__nav {
@@ -96,12 +99,17 @@ svg {
 .header__logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #212121;
   padding-bottom: 25px;
   padding-top: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-size: 26px;
+  }
 }
 .header__logo--accent {
   color: #2196f3;
@@ -110,23 +118,28 @@ svg {
   color: #2196f3;
 }
 .header__hamburger {
-  position: absolute;
-  right: 23px;
-  top: 22px;
   border: none;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header__hamburger {
+  .header {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .header__hamburger {
+  .header {
     display: none;
   }
+}
+.header__hamburger-icon {
+  color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__hamburger-icon:hover, .header__hamburger-icon:focus {
+  color: #2196f3;
 }
 .header__list {
   display: none;
@@ -183,6 +196,7 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -190,6 +204,7 @@ svg {
     display: flex;
     gap: 30px;
     flex-direction: row;
+    margin-left: auto;
   }
 }
 .contact__item {
@@ -489,6 +504,11 @@ svg {
 .doing {
   display: none;
 }
+@media screen and (min-width: 1200px) {
+  .doing {
+    display: flex;
+  }
+}
 .doing__title {
   font-weight: 700;
   font-size: 36px;
@@ -665,6 +685,7 @@ svg {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 24px;
+  width: 100%;
 }
 .team__title {
   font-weight: 700;
@@ -848,6 +869,7 @@ svg {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__wrapper {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -917,8 +939,14 @@ svg {
   margin-top: 60px;
   flex-direction: column;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .newsletter {
+    flex-direction: column;
+  }
+}
 @media screen and (min-width: 1200px) {
   .newsletter {
+    flex-direction: row;
     margin-left: 70px;
     margin-top: 30px;
   }
@@ -928,12 +956,6 @@ svg {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 1200px) {
-  .newsletter__label {
-    flex-direction: row;
-    align-items: baseline;
-  }
-}
 .newsletter__input {
   display: block;
   width: 358px;
@@ -942,7 +964,6 @@ svg {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: #2f303a;
   border-radius: 4px;
-  padding-left: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -971,7 +992,6 @@ svg {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-top: 20px;
-  padding-left: 28px;
 }
 @media screen and (min-width: 1200px) {
   .newsletter__button {
@@ -987,6 +1007,7 @@ svg {
 
 .join-field {
   margin-top: 60px;
+  flex-direction: column;
 }
 .join-field__title {
   font-weight: 700;
