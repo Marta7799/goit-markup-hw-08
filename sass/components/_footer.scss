@@ -3,7 +3,6 @@
   padding: 60px 0;
 
   &__wrapper {
-    display: flex;
     flex-direction: column;
     text-align: center;
     align-items: baseline;
@@ -16,7 +15,6 @@
     }
   }
   &__left {
-    margin-bottom: 60px;
     @include tablet {
       justify-content: space-between;
       margin-bottom: 0;

@@ -1,9 +1,7 @@
 .strengths {
   &__list {
-    display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-bottom: 94px;
     align-items: center;
     @include tablet {
       flex-direction: row;
@@ -15,11 +13,10 @@
       justify-content: center;
     }
   }
-  &__item {
-    width: 270px;
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
   }
   &__icons {
-    width: 270px;
     height: 120px;
     display: flex;
     align-items: center;
@@ -35,13 +32,13 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
   }
   &__text {
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $other-text-color;
-    width: 270px;
   }
   &__text:not(:last-child) {
     margin-right: 30px;
