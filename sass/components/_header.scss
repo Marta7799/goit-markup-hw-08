@@ -12,12 +12,12 @@
     @include tablet {
       display: flex;
       align-items: center;
-      padding: 21px 0;
+      padding: 21px 15px;
       height: 80px;
     }
     @include desktop {
       align-items: center;
-      padding: 25px 0 25px;
+      padding: 25px 0;
       height: 80px;
     }
   }

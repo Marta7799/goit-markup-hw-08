@@ -2,6 +2,7 @@
   display: none;
   @include desktop {
     display: flex;
+    padding-top: 0;
   }
   &__title {
     font-weight: 700;

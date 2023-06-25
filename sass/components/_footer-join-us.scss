@@ -1,13 +1,5 @@
 .join-field {
-  margin-top: 60px;
   flex-direction: column;
-
-  @include tablet {
-    margin-top: 65px;
-  }
-  @include desktop {
-    margin-top: 71px;
-  }
 
   &__title {
     font-weight: 700;

@@ -3,15 +3,14 @@
   padding: 60px 0;
 
   &__wrapper {
-    flex-direction: column;
-    text-align: center;
     align-items: baseline;
     @include tablet {
-      flex-direction: row;
+      display: flex;
+      justify-content: space-around;
       flex-wrap: wrap;
     }
     @include desktop {
-      flex-direction: row;
+      display: flex;
     }
   }
   &__left {
