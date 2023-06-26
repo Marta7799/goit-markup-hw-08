@@ -647,9 +647,6 @@ svg {
     justify-content: center;
   }
 }
-.strengths__item {
-  width: 354px;
-}
 @media screen and (min-width: 1200px) {
   .strengths__item {
     margin: 0 auto;
@@ -657,6 +654,14 @@ svg {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .strengths__item {
+    width: 354px;
+  }
+}
+.strengths__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .strengths__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -676,6 +681,11 @@ svg {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .strengths__title {
+    text-align: center;
+  }
 }
 .strengths__text {
   font-weight: 400;
@@ -697,7 +707,6 @@ svg {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 354px;
 }
 .team__title {
   font-weight: 700;
