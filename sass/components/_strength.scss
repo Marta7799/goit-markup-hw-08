@@ -23,7 +23,6 @@
     }
     @include tablet {
       width: 354px;
-      margin-bottom: 30px;
     }
   }
 }
@@ -44,9 +43,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
-  @include tablet {
-    text-align: center;
-  }
 }
 &__text {
   font-weight: 400;
