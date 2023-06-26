@@ -34,6 +34,9 @@
     margin-bottom: 20px;
     text-align: center;
     display: block;
+    @include desktop {
+      text-align: left;
+    }
   }
   &__logo--accent {
     color: $accent-color;
@@ -44,6 +47,9 @@
   font-style: normal;
   margin-top: 20px;
   text-align: center;
+  @include desktop {
+    text-align: left;
+  }
   &__link {
     font-weight: 400;
     font-size: $fontsize-normal;

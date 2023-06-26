@@ -9,6 +9,9 @@
     color: $secondary-text-color;
     margin-bottom: 20px;
     text-align: center;
+    @include desktop {
+      text-align: left;
+    }
   }
 }
 .join-list {

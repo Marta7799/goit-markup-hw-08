@@ -1,12 +1,17 @@
 .newsletter {
   margin-top: 60px;
   flex-direction: column;
-
+  @include tablet {
+    margin-top: auto;
+  }
   @include desktop {
     margin-left: auto;
   }
   &__label {
     align-items: baseline;
+    @include desktop {
+      display: flex;
+    }
   }
   &__input {
     display: block;
@@ -27,6 +32,9 @@
     @include desktop {
       width: 358px;
       margin: 0 auto;
+    }
+    @include tablet {
+      width: 450px;
     }
     &::placeholder {
       font-size: $fontsize-bigger;
