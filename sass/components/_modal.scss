@@ -27,6 +27,7 @@
   padding: 40px;
   @include desktop {
     overflow: hidden;
+    max-width: 528px;
   }
   @include tablet {
     overflow: hidden;

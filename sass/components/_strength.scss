@@ -14,9 +14,6 @@
       justify-content: center;
     }
   }
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
   &__item {
     @include desktop {
       margin: 0 auto;
@@ -24,6 +21,15 @@
     @include tablet {
       width: 354px;
       margin-bottom: 30px;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+    @include desktop {
+      margin-bottom: 0px;
+    }
+    @include tablet {
+      margin-bottom: 0px;
     }
   }
   &__icons {
@@ -42,6 +48,13 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+    @include desktop {
+      text-align: left;
+    }
   }
   &__text {
     font-weight: 400;

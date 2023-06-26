@@ -255,6 +255,7 @@ svg {
 @media screen and (min-width: 1200px) {
   .modal {
     overflow: hidden;
+    max-width: 528px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -503,7 +504,7 @@ svg {
     width: 226px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .clients__link {
     width: 170px;
   }
@@ -578,8 +579,10 @@ svg {
 }
 @media screen and (min-width: 1200px) {
   .effects {
+    max-width: 1600px;
+    height: 600px;
     padding: 200px 0;
-    background-size: contain;
+    background-size: cover;
     background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 0%), url(../images/background-effects-desktop-1x.jpg);
   }
 }
@@ -657,9 +660,6 @@ svg {
     justify-content: center;
   }
 }
-.strengths__item:not(:last-child) {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 1200px) {
   .strengths__item {
     margin: 0 auto;
@@ -669,6 +669,19 @@ svg {
   .strengths__item {
     width: 354px;
     margin-bottom: 30px;
+  }
+}
+.strengths__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .strengths__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .strengths__item:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
 .strengths__icons {
@@ -687,6 +700,17 @@ svg {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .strengths__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .strengths__title {
+    text-align: left;
+  }
 }
 .strengths__text {
   font-weight: 400;
@@ -723,6 +747,7 @@ svg {
   margin-bottom: 50px;
 }
 .team__list {
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 0 auto;
@@ -898,6 +923,7 @@ svg {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    row-gap: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
