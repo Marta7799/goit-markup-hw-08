@@ -901,12 +901,6 @@ svg {
   position: relative;
   overflow: hidden;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .box {
-    flex-grow: 3;
-    height: 100%;
-  }
-}
 
 .overlay {
   width: 100%;
@@ -934,7 +928,6 @@ svg {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
   border-top: 0;
-  width: 100%;
 }
 .term__title {
   font-weight: 700;
