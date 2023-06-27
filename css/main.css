@@ -679,11 +679,6 @@ svg {
     margin-bottom: 0px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .strengths__item:not(:last-child) {
-    margin-bottom: 0px;
-  }
-}
 .strengths__icons {
   height: 120px;
   display: flex;
