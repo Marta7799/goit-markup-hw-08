@@ -80,6 +80,14 @@
 .box {
   position: relative;
   overflow: hidden;
+  @include tablet {
+    flex-grow: 3;
+  }
+  &__img {
+    @include tablet {
+      height: 100%;
+    }
+  }
 }
 .overlay {
   width: 100%;

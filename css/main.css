@@ -901,6 +901,16 @@ svg {
   position: relative;
   overflow: hidden;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .box {
+    flex-grow: 3;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .box__img {
+    height: 100%;
+  }
+}
 
 .overlay {
   width: 100%;
