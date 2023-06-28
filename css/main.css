@@ -243,7 +243,6 @@ svg {
   max-width: 450px;
   height: 95%;
   max-height: 629px;
-  overflow: scroll;
   z-index: 2;
   position: absolute;
   background-color: #ffffff;
@@ -254,13 +253,7 @@ svg {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    overflow: hidden;
     max-width: 528px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .modal {
-    overflow: hidden;
   }
 }
 .modal__close {
