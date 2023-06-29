@@ -109,7 +109,7 @@ svg {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #212121;
   padding-bottom: 25px;
@@ -980,7 +980,7 @@ svg {
 .footer__logo {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -991,6 +991,7 @@ svg {
 @media screen and (min-width: 1200px) {
   .footer__logo {
     text-align: left;
+    font-size: 26px;
   }
 }
 .footer__logo--accent {
